@@ -13,6 +13,12 @@ app.use("/test", (req, res)=>{
     res.send("Hello from the server...pakka")
 })
 
+app.get("/signup", (req, res)=>{
+    res.send({
+        name : "Bala",
+        wife: "mangai"
+    })
+})
 
 
 app.use("/", (req, res)=>{
